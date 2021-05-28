@@ -7,6 +7,39 @@
   <title>Weather App</title>
 </head>
 <body>
-  
+  <header>
+    <h1>Weather App</h1>
+  </header>
+
+  <div class="search_loc">
+    <form action="/" method="GET">
+      <legend>Enter location for weather information.</legend>
+      <label for="location">
+        <input id="location" name="location" type="text">
+      </label>
+      <input id="submit" type="submit" name="submit" value="SEARCH">
+    </form>
+  </div>
+    
+  <section>
+    <div class="day_container">
+      <img src="https://via.placeholder.com/400x300" alt="">
+    </div>
+
+    <div class="sun_moon_icon">
+      
+    </div>
+
+    <div class="info">
+      <h3 class="city_name">City Name</h3>
+
+      <div class="weather_condition">Weather Condition</div>
+
+      <h4 class="temp">
+        TEMP
+        <span>&deg;</span>
+      </h4>
+    </div>
+  </section>
 </body>
 </html>
