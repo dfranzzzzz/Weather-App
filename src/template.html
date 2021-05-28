@@ -12,7 +12,7 @@
   </header>
 
   <div class="search_loc">
-    <form action="/" method="GET">
+    <form class="form" action="/" method="GET">
       <legend>Enter location for weather information.</legend>
       <label for="location">
         <input id="location" name="location" type="text">
@@ -23,22 +23,22 @@
     
   <section>
     <div class="day_container">
-      <img src="https://via.placeholder.com/400x300" alt="">
+      <img class="day_night" src="https://via.placeholder.com/400x300" alt="">
     </div>
 
-    <div class="sun_moon_icon">
-      
-    </div>
+    
 
     <div class="info">
-      <h3 class="city_name">City Name</h3>
-
-      <div class="weather_condition">Weather Condition</div>
-
-      <h4 class="temp">
-        TEMP
-        <span>&deg;</span>
-      </h4>
+      <div>
+        <h3 class="city_name">City Name</h3>
+        <div class="weather_condition">Weather Condition</div>
+        <h4 class="temp">
+          TEMP
+          <span>&deg;</span>
+          C
+        </h4>
+      </div>
+      <img class="weather_icon" src="#" alt="">
     </div>
   </section>
 </body>

@@ -10,5 +10,9 @@ module.exports = merge (common, {
     path: path.resolve(__dirname, "dist"), // stores contenthashed main.js in dist folder
     assetModuleFilename: "./assets/[name].[contenthash].[ext]", // stores assets in a 'assets' folder
   },
-  plugins: [new CleanWebpackPlugin()] //removes excess main.js in dist directory when building
+  plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*', '!assets/**']
+    })
+  ] // removes excess main.js in dist directory when building
 })
