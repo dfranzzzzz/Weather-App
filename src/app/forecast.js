@@ -1,4 +1,4 @@
-const key = "4xZCtg52pQQB442kHouTUGYNLEUARFWk";
+const key = "9nJGD79mhfH9LigW3vAPW447CCO7GWAE";
 
 export const getCity = async (city) => {
 
